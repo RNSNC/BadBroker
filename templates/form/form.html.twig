@@ -1,0 +1,57 @@
+<div class="text_center">
+    CALCULATE THE AMOUNT OF POSSIBLE PROFIT
+</div>
+<form method="post" action="/calculator">
+    <div class="row">
+        <div class="col-3 form_text">USD</div>
+        <div class="col-6">
+            <div class="input-group input-group-sm">
+                <span class="input-group-text">$</span>
+                <input required type="number" class="form-control"  name="capital">
+            </div>
+        </div>
+        <div class="col-5"></div>
+    </div><br>
+    <div class="text_center">
+        CHOOSE A DATE
+    </div>
+    <div class="row">
+        <div class="col-3 form_text">START DATE</div>
+        <div class="col-6">
+            <div class="input-group input-group-sm">
+                <span class="input-group-text">Y</span>
+                <input required type="number" min="2010" class="form-control" name="start_y">
+                <span class="input-group-text">M</span>
+                <input required type="number" min="01" max="12" class="form-control" name="start_m">
+                <span class="input-group-text">D</span>
+                <input required type="number" min="01" max="31" class="form-control" name="start_d">
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-3 form_text">END DATE</div>
+        <div class="col-6">
+            <div class="input-group input-group-sm">
+                <span class="input-group-text">Y</span>
+                <input required type="number" min="2010" class="form-control" name="end_y">
+                <span class="input-group-text">M</span>
+                <input required type="number" min="01" max="12" class="form-control" name="end_m">
+                <span class="input-group-text">D</span>
+                <input required type="number" min="01" max="31" class="form-control" name="end_d">
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row" id="example_form">
+        <div class="col-3" id="example_form_text">EXAMPLE</div>
+        <div class="col-2" id="example_form_y">2022</div>
+        <div class="col-2" id="example_form_m">07</div>
+        <div class="col-2" id="example_form_d">04</div>
+        <div class="col-3"></div>
+    </div><br>
+    <div align="center">
+        <input type="hidden" name="currency" value="{{ title }}">
+        <input type="submit" class="btn btn-success" value="CALCULATE">
+    </div>
+</form>

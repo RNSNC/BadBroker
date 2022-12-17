@@ -1,0 +1,26 @@
+.form_text{
+    font-size: 14px;
+    padding-top: 6px;
+    text-align: right;
+}
+#example_form{
+    font-size: 14px;
+    color: #7c777a;
+}
+#example_form_text{
+    text-align: right;
+}
+#example_form_y{
+    margin-left: 35px;
+}
+#example_form_m{
+    margin-left: 5px;
+}
+#example_form_d{
+    margin-left: -10px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

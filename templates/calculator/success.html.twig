@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col text_right">
+        BEST NET PROFIT
+    </div>
+    <div class="col">
+        <div class="text_center" id="profit">
+            <b>{{ profit.profit }}</b>
+        </div>
+    </div>
+</div>
+<div class="text_center"><h3>IT WILL BE MOST PROFITABLE</h3></div>
+<div class="row">
+    <div class="col text_right">
+        BUY CURRENCY
+    </div>
+    <div class="col">
+        {{ profit.currency }}
+    </div>
+</div>
+<div class="row">
+    <div class="col text_right">
+        TO BUY ON
+    </div>
+    <div class="col">
+        {{ profit.start }}
+    </div>
+</div>
+<div class="row">
+    <div class="col text_right">
+        AND SELL IT ON
+    </div>
+    <div class="col">
+        {{ profit.end }}
+    </div>
+</div>
+<div class="text_center">OUTPUT</div>
+<div class="text_center">
+    OUT OF &nbsp;&nbsp;&nbsp;
+    <span class="money">{{ profit.capital }}$</span>
+    &nbsp;&nbsp;&nbsp; WE GET &nbsp;&nbsp;&nbsp;
+    <span class="money">{{ profit.money|round(2) }}$</span>
+</div>

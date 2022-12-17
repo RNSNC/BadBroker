@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ asset('asset/css/calculator.css') }}">
+{% endblock %}
+
+{% block body %}
+    {% if profit.money == profit.capital %}
+        <div class="text_center">
+            UNFORTUNATELY, AT THIS TIME IT WAS NOT POSSIBLE TO MAKE A PROFIT
+            <div>
+                <a class="btn btn-secondary" href="{{ profit.from }}">RETURN</a>
+            </div>
+        </div>
+    {% else %}
+        {% include 'calculator/success.html.twig' %}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ asset('asset/css/form.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="text_center">
+        <div>SOMETHING WENT WRONG</div>
+        <div>PLEASE TRY TO ENTER THE CORRECT DATE</div>
+        <div>NO MORE THAN 365 DAYS</div>
+        <div>
+            <a class="btn btn-secondary" href="{{ url }}">RETURN</a>
+        </div>
+    </div>
+{% endblock %}
